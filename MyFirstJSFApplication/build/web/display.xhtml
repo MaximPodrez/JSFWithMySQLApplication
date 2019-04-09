@@ -7,27 +7,6 @@
         <title>Display Message !!</title>
     </h:head>
     <h:body>
-        <h:outputText value="Welcome #{myBean.name} to my first JSF application with connection to MySQL!"/>
-        <br></br>
-        <h:outputText value="Information about players from database: " />
-        <h:dataTable value ="#{myBean.list}" var="s">
-            <h:column>
-                <f:facet name="header">ID</f:facet>
-                #{s.id}
-            </h:column>
-            <h:column>
-                <f:facet name="header">NAME</f:facet>
-                #{s.name}
-            </h:column>
-            <h:column>
-                <f:facet name="header">SURNAME</f:facet>
-                #{s.surname}
-            </h:column>
-            <h:column>
-                <f:facet name="header">AGE</f:facet>
-                #{s.age}
-            </h:column>
-        </h:dataTable>
+        <h:outputText value="Welcome #{login.username} to my system!"/>
     </h:body>
 </html>
-
